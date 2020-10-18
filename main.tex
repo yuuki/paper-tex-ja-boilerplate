@@ -1,0 +1,52 @@
+\documentclass[submit,techreq]{ipsj}
+% (journal) \documentclass[submit]{ipsj}
+
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage[dvipdfmx]{graphicx}
+\usepackage[hyphens]{url}
+
+\def\Underline{\setbox0\hbox\bgroup\let\\\endUnderline}
+\def\endUnderline{\vphantom{y}\egroup\smash{\underline{\box0}}\\}
+\def\|{\verb|}
+% (journal) \setcounter{page}{1}
+
+\begin{document}
+
+% 和文表題
+\title{IPSJスタイルの日本語LaTeXテンプレート}
+
+% 英文表題
+\etitle{LaTeX Template in Japanese for IPSJ style}
+
+% 所属ラベルの定義
+\paffiliate{SAKURA}{さくらインターネット株式会社 さくらインターネット研究所
+SAKURA internet Research Center, SAKURA internet Inc.,
+Ofukatyo, Kitaku, Osaka 530-0011 Japan
+}
+\paffiliate{KYOTOU}{京都大学情報学研究科,
+Graduate School of Infomatics, Kyoto University,
+Kyoto 606--8501, Japan}
+
+\author{坪内 佑樹}{Yuuki Tsubouchi}{SAKURA,KYOTOU}[y-tsubouchi@sakura.ad.jp,y-tsubouchi@net.ist.i.kyoto-u.ac.jp]
+
+% 和文内容梗概
+\begin{abstract}
+\end{abstract}
+
+\begin{jkeyword}
+\end{jkeyword}
+
+% 英文内容梗概
+\begin{eabstract}
+\end{eabstract}
+
+\begin{ekeyword}
+\end{ekeyword}
+
+\maketitle
+
+\section{はじめに}
+\label{sec:introduction}
+
+\bibliographystyle{style/ipsjsort}
+\bibliography{references}
